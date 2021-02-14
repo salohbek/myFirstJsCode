@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="hi" >hello</div>
+  <button id="button" onclick="show()">show</button>
+  <div id="hello" ></div>
+  <div  id="num">1 
+      
+  </div>
+  <b id="numstr"></b><br>
+
+  <button id="button" onclick="sum()">+</button>
+  <button id="button" onclick="sum1()">-</button>
+
+</body>
+
+    <script>
+ function show(){
+     document.getElementById("hello").innerHTML="hello show";
+ }
+ function sum(){
+    document.getElementById("num").innerHTML++;
+    
+ 
+ if(document.getElementById('num').innerHTML==0){
+    document.getElementById("numstr").innerHTML="null";
+ }
+ else  if(document.getElementById('num').innerHTML==10){
+    document.getElementById("numstr").innerHTML="o'n";
+ }
+ else{
+    document.getElementById("numstr").innerHTML="";  
+ }
+ }function sum1(){
+    document.getElementById("num").innerHTML--;
+   
+  
+    if(document.getElementById('num').innerHTML==0){
+    document.getElementById("numstr").innerHTML="null";
+ }
+ else if(document.getElementById('num').innerHTML==10){
+    document.getElementById("numstr").innerHTML="o'n";
+ }
+ 
+ else{
+    document.getElementById("numstr").innerHTML="";  
+ }
+ 
+ }
+ 
+// document.getElementById('hi').innerHTML="hemo";
+// document.getElementById('hi').style.width="200px";
+// document.getElementById('hi').style.height="200px";
+// document.getElementById('hi').style.background="red";
+//
+
+    </script>
+</html>
